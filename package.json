@@ -1,0 +1,24 @@
+{
+  "name": "frate-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "firebase-admin": "^10.0.2",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15",
+    "peer": "^0.6.1",
+    "pg": "^8.7.3",
+    "pm2": "^5.2.0",
+    "socket.io": "^4.4.1",
+    "socket.io-file": "^2.0.31",
+    "socket.io-file-client": "^2.0.2",
+    "uuid": "^8.3.2"
+  }
+}
