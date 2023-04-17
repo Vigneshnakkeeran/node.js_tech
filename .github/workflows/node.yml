@@ -14,7 +14,7 @@ jobs:
         run: npm install
       - name: copy to Deploy server 
         run: |
-         rsync -zhvr . ubuntu@54.235.227.96:/home/ubuntu/node-app
+         rsync -zhvr  -o StricthostKeyChecking=no . ubuntu@54.235.227.96:/home/ubuntu/node-app
       - name: Start Application
         run: |
          ssh -o StricthostKeyChecking=no ubuntu@54.235.227.96 'pm2 restart server'
