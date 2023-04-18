@@ -17,4 +17,4 @@ jobs:
          scp -r /home/ubuntu/node.js_tech* /home/ubuntu/nod-app
       - name: Start Application
         run: |
-         ssh -o StricthostKeyChecking=no ubuntu@3.95.162.49 'pm2 restart server'
+         ssh -i "$KEY_PEM" ubuntu@ec2-3-95-162-49 'pm2 restart server'
