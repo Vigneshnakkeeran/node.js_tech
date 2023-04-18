@@ -14,7 +14,7 @@ jobs:
         run: npm install
       - name: copy to Deploy server 
         run: |
-         rsync -zhvr . ubuntu@3.95.162.49:/home/ubuntu/nod-app
+         scp -o StrictHostKeyChecking=no . ubuntu@3.95.162.49:/home/ubuntu/nod-app
       - name: Start Application
         run: |
          ssh -o StricthostKeyChecking=no ubuntu@3.95.162.49 'pm2 restart server'
